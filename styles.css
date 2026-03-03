@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+:root{
+    --prim: black;
+    --sec: #0A5BA8;
+    --font: 'League Spartan';
+} /*creating all the variables to use later in the css*/
+
+
+body{
+    font-family: var(--font);
+    background-color: var(--prim);
+}/*backgroung color and the font of the whole doc*/
+
+header{
+    display: flex;
+    color: var(--sec);
+    justify-content: space-between;
+}/*customizing the header*/
+
+
+header h1{
+    font-size: 67px;
+}/*bigger h1 setting*/
+
+header img{
+    min-width: 267px;
+    max-height: 106px;
+}/*setting a max height and min width for the */
+
+.career, .edu, .housing, .ess, .life, .save {
+    color: white;
+}
+
+
+input{
+    height: 40px;
+    width: 250px;
+    border-radius: 100px;
+}
+
+[alt='info']{
+    margin-bottom: -12px;
+}
