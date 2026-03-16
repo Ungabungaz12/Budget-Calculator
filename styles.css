@@ -13,176 +13,105 @@
 
 
 
-:root {
-    --prim: black;
 :root{
     --prim: #1E1E1E;
     --sec: #0A5BA8;
     --font: 'League Spartan';
-}
-
-/*creating all the variables to use later in the css*/
+} /*creating all the variables to use later in the css*/
 
 
-body {
+body{
     font-family: var(--font);
     background-color: var(--prim);
     margin: 0;
-    padding: 0;
-}
-
-/*backgroung color and the font of the whole doc*/
+    padding: 0; 
+}/*backgroung color and the font of the whole doc*/
 
 main {
     display: flex;
     align-items: flex-start;
     flex-direction: row;
     justify-content: space-between;
-    gap: 100px;
     margin-left: 5%;
     margin-right: 15%;
 }
 
-h3,
-span {
+h3, span {
     font-size: 24px;
     font-weight: bold;
 }
 
-header {
+header{
     display: flex;
     color: var(--sec);
     justify-content: space-between;
     margin: 2em;
-}
-
-/*customizing the header*/
+}/*customizing the header*/
 
 
-header h1 {
+header h1{
     font-size: 67px;
-}
     font-weight: 400;
 }/*bigger h1 setting*/
 
-/*bigger h1 setting*/
-
-header img {
+header img{
     min-width: 267px;
     max-height: 106px;
     margin: 2em;
     margin-right: 3em;
-}
+}/*setting a max height and min width for the */
 
-/*setting a max height and min width for the */
-
-.career,
-.edu,
-.housing,
-.ess,
-.life,
-.save {
+.career, .edu, .housing, .ess, .life, .save {
     color: white;
     margin-left: 2em;
-
+    
 }
 
-#inputs>section>input {
-
-
-/* career select */
-.career #career {
-    margin-bottom: 0px;
-    margin-left: 1em;
+#inputs > section > input{
     height: 40px;
     width: 250px;
     border-radius: 100px;
 }
 
-#inputs>section>h3 {
-    margin-bottom: 2rem;
-}
-
-#inputs>section>#career {
-    margin-left: 0.5rem;
-/* Input sections */
-.inputs {
-    display: flex;
-    flex-direction: column;
-    place-content: center;
-}
-
-/* All inputs */
-input, select {
-    height: 40px;
-    width: 250px;
-    border-radius: 100px;
-    border: 0;
-}
-
-input:focus {
-    outline: none;
-}
-
-section>img {
-    margin: 1em;
-}
-
-button {
-    background-color: transparent;
 #inputs > section > h3 {
     margin-bottom: 0.5rem;
 }
 
-.inputRow {
-    display: flex;
-    align-items: center;
+#inputs > section > #career {
+margin-left: 0.5rem;    
 }
 
-.inputRow > button {
-    margin-left: 1em;
+
+section {
+    margin: 2em;
+}
+
+section > img {
+    margin: 1em;
+}
+
 button {
     border: none;
     background: none;
 }
 
-#inputs>section>button {
+#inputs > section > button {
     margin-left: 3em;
     border: none;
-    background-color: rgba(240, 248, 255, 0);
 }
 
 button:hover {
     cursor: pointer;
 }
 
-#inputs>section>#find {
+#inputs > section > #find {
     margin-left: -2rem;
     margin-top: -1em;
     margin-bottom: -0.2em;
-.inputRow .inputBox {
-    display: flex;
-    align-items: center;
-
-    background-color: white;
-    border-radius: 20px;
-    padding: 0px 10px;
 }
 
-.inputBox #find {
-    margin-left: 1em;
-}
-
-[alt='info'] {
+[alt='info']{
     margin-bottom: -12px;
-}
-
-
-/* Chart Area */
-#chartArea {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 #pie {
@@ -196,16 +125,6 @@ button:hover {
     height: 40px;
     width: 250px;
     border-radius: 100px;
-}
-#chartArea #popUp {
-    margin-top: 50px;
-    background-color: white;
-    padding: 15px;
-    border-radius: 20px;
-}
-
-#popUp.hidden {
-    display: none;
 }
 
 #results {

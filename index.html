@@ -26,109 +26,64 @@
             <div id="inputs">
                 <article class="career">
                     <h3>What is your career?</h3>
-                    <select id="career">
-                        <option>Select Career</option>
+                    <select id="career" onchange="updateValue()">
+                        <option value="0">Select Career</option>
                     </select>
                     <!-- <img src="/imgs/search.png" alt="search" id="find"> --> <!-- commented out for now -->
-                    <button><img class="info-png" src="/imgs/info.png" alt="info"></button>
-                    <div class="inputRow">
-                        <select id="career">
-                            <option>Select Career</option>
-                        </select>
-                        <!-- <img src="/imgs/search.png" alt="search" id="find"> --> <!-- commented out for now -->
-                        <button><img src="/imgs/info.png" alt="info"></button>
-                    </div>
+                    <button><img src="/imgs/info.png" alt="info"></button>
                 </article>
-
+    
                 <section class="edu">
                     <h3 class="Education">How much do you spend on your education?</h3>
                     <span>$</span>
                     <input type="number" id="edu" placeholder="Enter the amount here...">
                     <img src="/imgs/search.png" alt="search" id="find">
-                    <button><img src="/imgs/info.png" alt="info"></button>
-                    <div class="inputRow">
-                        <span>$</span>
-                        <div class="inputBox">
-                            <input type="number" id="edu" placeholder="Enter the amount here...">
-                            <img src="/imgs/search.png" alt="search" id="find">
-                        </div>
-                        <button><img class="info-png" src="/imgs/info.png" alt="info"></button>
-                    </div>
-
+                    <button><img class="info-png" src="/imgs/info.png" alt="info"></button>
                 </section>
-
+    
                 <section class="housing">
                     <h3 class="Housing">How much do you spend on housing?</h3>
-                    <div class="inputRow">
-                        <span>$</span>
-                        <div class="inputBox">
-                            <input type="number" id="housing" placeholder="Enter the amount here...">
-                            <img src="/imgs/search.png" alt="search" id="find">
-                        </div>
-
-                        <button><img src="/imgs/info.png" alt="info"></button>
-                    </div>
-
+                    <span>$</span>
+                    <input type="number" id="housing" placeholder="Enter the amount here...">
+                    <img src="/imgs/search.png" alt="search" id="find">
+                    <button><img src="/imgs/info.png" alt="info"></button>
                 </section>
-
+    
                 <section class="ess">
                     <h3 class="Essentials">How much do you spend on essentials?</h3>
-                    <div class="inputRow">
-                        <span>$</span>
-                        <div class="inputBox">
-                            <input type="number" id="ess" placeholder="Enter the amount here...">
-                            <img src="/imgs/search.png" alt="search" id="find">
-                        </div>
-
-                        <button><img src="/imgs/info.png" alt="info"></button>
-                    </div>
-
+                    <span>$</span>
+                    <input type="number" id="ess" placeholder="Enter the amount here...">
+                    <img src="/imgs/search.png" alt="search" id="find">
+                    <button><img src="/imgs/info.png" alt="info"></button>
                 </section>
-
+    
                 <section class="life">
                     <h3 class="Lifestyle">What are your lifestyle expenses?</h3>
                     <!--Changed up the wording for this one a little becuase it was getting repetetive-->
-                    <div class="inputRow">
-                        <span>$</span>
-                        <div class="inputBox">
-                            <input type="number" id="life" placeholder="Enter the amount here...">
-                            <img src="/imgs/search.png" alt="search" id="find">
-                        </div>
-
-                        <button><img src="/imgs/info.png" alt="info"></button>
-                    </div>
-
+                    <span>$</span>
+                    <input type="number" id="life" placeholder="Enter the amount here...">
+                    <img src="/imgs/search.png" alt="search" id="find">
+                    <button><img src="/imgs/info.png" alt="info"></button>
                 </section>
-
+    
                 <section class="save">
                     <h3 class="Savings">How much do you save a month?</h3>
-                    <div class="inputRow">
-                        <span>$</span>
-                        <div class="inputBox">
-                            <input type="number" id="savings" placeholder="Enter the amount here...">
-                            <img src="/imgs/search.png" alt="search" id="find">
-                        </div>
-
-                        <button><img src="/imgs/info.png" alt="info"></button>
-                    </div>
-
+                    <span>$</span>
+                    <input type="number" id="savings" placeholder="Enter the amount here..." onchange="popUp()">
+                    <img src="/imgs/search.png" alt="search" id="find">
+                    <button><img src="/imgs/info.png" alt="info"></button>
                 </section>
             </div>
         </article>
 
-        <canvas id="pie"></canvas>
-        <article id="chartArea">
+        <div id="results">
             <canvas id="pie"></canvas>
-
-            <section id="popUp" class="hidden">
-                <h3>Wise-up!</h3>
-                <p>"Savings" is an expense you pay to your future self.</p>
-                <p>Consider saving at least 10% of your monthly earnings!</p>
-            </section>
-        </article>
-
+        </div>
+        
+    
     </main>
-
+    <img src="/imgs/Coins.png" alt="coins" id="coins">
+    
 </body>
 
 </html>
