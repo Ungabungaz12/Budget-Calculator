@@ -26,6 +26,11 @@
             <div id="inputs">
                 <article class="career">
                     <h3>What is your career?</h3>
+                    <select id="career">
+                        <option>Select Career</option>
+                    </select>
+                    <!-- <img src="/imgs/search.png" alt="search" id="find"> --> <!-- commented out for now -->
+                    <button><img class="info-png" src="/imgs/info.png" alt="info"></button>
                     <div class="inputRow">
                         <select id="career">
                             <option>Select Career</option>
@@ -37,6 +42,10 @@
 
                 <section class="edu">
                     <h3 class="Education">How much do you spend on your education?</h3>
+                    <span>$</span>
+                    <input type="number" id="edu" placeholder="Enter the amount here...">
+                    <img src="/imgs/search.png" alt="search" id="find">
+                    <button><img src="/imgs/info.png" alt="info"></button>
                     <div class="inputRow">
                         <span>$</span>
                         <div class="inputBox">
@@ -107,6 +116,7 @@
             </div>
         </article>
 
+        <canvas id="pie"></canvas>
         <article id="chartArea">
             <canvas id="pie"></canvas>
 

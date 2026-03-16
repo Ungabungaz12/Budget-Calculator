@@ -13,19 +13,25 @@
 
 
 
+:root {
+    --prim: black;
 :root{
     --prim: #1E1E1E;
     --sec: #0A5BA8;
     --font: 'League Spartan';
-} /*creating all the variables to use later in the css*/
+}
+
+/*creating all the variables to use later in the css*/
 
 
-body{
+body {
     font-family: var(--font);
     background-color: var(--prim);
     margin: 0;
-    padding: 0; 
-}/*backgroung color and the font of the whole doc*/
+    padding: 0;
+}
+
+/*backgroung color and the font of the whole doc*/
 
 main {
     display: flex;
@@ -37,37 +43,51 @@ main {
     margin-right: 15%;
 }
 
-h3, span {
+h3,
+span {
     font-size: 24px;
     font-weight: bold;
 }
 
-header{
+header {
     display: flex;
     color: var(--sec);
     justify-content: space-between;
     margin: 2em;
-}/*customizing the header*/
+}
+
+/*customizing the header*/
 
 
-header h1{
+header h1 {
     font-size: 67px;
+}
     font-weight: 400;
 }/*bigger h1 setting*/
 
-header img{
+/*bigger h1 setting*/
+
+header img {
     min-width: 267px;
     max-height: 106px;
     margin: 2em;
     margin-right: 3em;
-}/*setting a max height and min width for the */
-
-.career, .edu, .housing, .ess, .life, .save {
-    color: white;
-    margin-left: 2em;
-    
 }
 
+/*setting a max height and min width for the */
+
+.career,
+.edu,
+.housing,
+.ess,
+.life,
+.save {
+    color: white;
+    margin-left: 2em;
+
+}
+
+#inputs>section>input {
 
 
 /* career select */
@@ -79,6 +99,12 @@ header img{
     border-radius: 100px;
 }
 
+#inputs>section>h3 {
+    margin-bottom: 2rem;
+}
+
+#inputs>section>#career {
+    margin-left: 0.5rem;
 /* Input sections */
 .inputs {
     display: flex;
@@ -98,6 +124,12 @@ input:focus {
     outline: none;
 }
 
+section>img {
+    margin: 1em;
+}
+
+button {
+    background-color: transparent;
 #inputs > section > h3 {
     margin-bottom: 0.5rem;
 }
@@ -114,7 +146,7 @@ button {
     background: none;
 }
 
-#inputs > section > button {
+#inputs>section>button {
     margin-left: 3em;
     border: none;
     background-color: rgba(240, 248, 255, 0);
@@ -124,6 +156,10 @@ button:hover {
     cursor: pointer;
 }
 
+#inputs>section>#find {
+    margin-left: -2rem;
+    margin-top: -1em;
+    margin-bottom: -0.2em;
 .inputRow .inputBox {
     display: flex;
     align-items: center;
@@ -137,7 +173,7 @@ button:hover {
     margin-left: 1em;
 }
 
-[alt='info']{
+[alt='info'] {
     margin-bottom: -12px;
 }
 
@@ -153,6 +189,14 @@ button:hover {
     width: 300px;
 }
 
+/* career select */
+.career #career {
+    margin-bottom: 0px;
+    margin-left: 1em;
+    height: 40px;
+    width: 250px;
+    border-radius: 100px;
+}
 #chartArea #popUp {
     margin-top: 50px;
     background-color: white;
