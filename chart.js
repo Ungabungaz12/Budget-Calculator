@@ -198,6 +198,10 @@ function popUp() {
     const savings = document.getElementById("savings").valueAsNumber || 0;
     const results = document.getElementById("results");
     if (savings < incomePercent * 0.1) {
+        if (results.querySelector(".popup")) {
+            return; // Prevent multiple pop-ups
+        }
+        else {
         const popup = document.createElement("div");
         popup.classList.add("popup");
         popup.innerHTML = `
@@ -211,7 +215,7 @@ function popUp() {
         document.getElementById("close-btn").addEventListener("click", () => {
             results.removeChild(popup);
         });
-
+        }
     } else {
         return;
     }
